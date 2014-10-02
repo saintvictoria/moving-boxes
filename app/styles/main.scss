@@ -18,7 +18,8 @@ body {
   margin-left: 200px;
   font-family: Helvetica, Arial;
   font-size: 11pt;
-}
+  /* overflow: hidden; */
+  }
 @mixin headers {
   border: 1px solid black;
   font-family: Serif;
@@ -26,9 +27,8 @@ body {
   text-align: center;
   margin:0;
   background-color: lightblue;
-
-
 }
+
 .box1 {
   @include boxes;
   .heading1 {
@@ -47,3 +47,12 @@ body {
     @include headers;
   }
 }
+/* span {
+  height:0;
+  display: block;
+}
+.open .moving {
+
+  height:0px;
+  color: red;
+ } */
