@@ -1,13 +1,16 @@
  // Bourbon & Neat
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
-/* // Custom Styles
-body {
-  background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
-} */
-.x{}
+/* // Custom Styles */
+.x {
+  width: 450px;
+  background: url(../images/hipster.jpg);
+  background-size: 450px 500px;
+  background-repeat: no-repeat;
+  margin-left: 200px;
+
+  /* padding-left: margin 200px; */
+}
 
 .appear {
   display:block;
@@ -16,28 +19,23 @@ body {
   display: none;
 }
 
-
-
 @mixin boxes {
   width: 450px;
-  border-top: 100px solid #CECFCA;
-  border: 1px solid #CECFCA;
-  border-radius: 5px;
   margin-top: 10px;
-  margin-left: 200px;
   font-family: Helvetica, Arial;
   font-size: 11pt;
+  color: orange;
 }
 
   @mixin headers {
   width: 450px;
-  border: 1px solid #CECFCA;
+  border: 1px solid $borders;
   border-radius: 7px;
   font-family: Serif;
   font-size: 25pt;
   text-align: center;
-  margin-left: 200px;
-  background-color: #CECFCA;
+  /* margin-left: 200px; */
+  background-color: $borders;
   }
   $borders: #CECFCA;
 
