@@ -1,58 +1,58 @@
  // Bourbon & Neat
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
-
 /* // Custom Styles
 body {
   background: #fafafa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
 } */
+.x{}
+
+.appear {
+  display:block;
+}
+.hide {
+  display: none;
+}
+
+
 
 @mixin boxes {
   width: 450px;
-  height:250px;
-  border-top: 100px solid lightblue;
-  border: 1px solid lightblue;
+  border-top: 100px solid #CECFCA;
+  border: 1px solid #CECFCA;
+  border-radius: 5px;
   margin-top: 10px;
   margin-left: 200px;
   font-family: Helvetica, Arial;
   font-size: 11pt;
-  /* overflow: hidden; */
-  }
-@mixin headers {
-  border: 1px solid black;
+}
+
+  @mixin headers {
+  width: 450px;
+  border: 1px solid #CECFCA;
+  border-radius: 7px;
   font-family: Serif;
   font-size: 25pt;
   text-align: center;
-  margin:0;
-  background-color: lightblue;
+  margin-left: 200px;
+  background-color: #CECFCA;
+  }
+  $borders: #CECFCA;
+
+h2 {
+  @include headers;
 }
 
-.box1 {
+  .box1 {
   @include boxes;
-  .heading1 {
-    @include headers;
   }
-}
-.box2 {
-  @include boxes;
-  .heading2 {
-    @include headers;
-  }
-}
-.box3 {
-  @include boxes;
-  .heading3 {
-    @include headers;
-  }
-}
-/* span {
-  height:0;
-  display: block;
-}
-.open .moving {
 
-  height:0px;
-  color: red;
- } */
+  .box2 {
+  @include boxes;
+    }
+
+  .box3 {
+  @include boxes;
+  }
